@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>免费注册 - 餐饮杰</title>
+  <link rel="shortcut icon" href="./img/bitbug_favicon (1).ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/register.css">
+</head>
+<body onload='getProvince()'>
+  <div>
+     <!-- 顶部导航栏 -->
+     <div class="topnav">
+      <!-- 品牌图标能够链接到首页 -->
+      <a href="index.html">
+        <img src="img/logo.png" alt="">
+      </a>
+
+      <!-- 导航内容 -->
+      <div >
+        <ul class="zf" >
+          <li >
+            <a href="#" title="餐饮品牌" class="zf sf">品牌</a>
+          </li>
+          <li class="item1">
+            <button onclick="window.location.href = '#' " >
+              <span class="zf sf">资讯</span>
+              <div class="down1 xf">
+                <ul>
+                  <li>
+                    <a href="cyhyzx.html" class="sf">餐饮行业资讯</a>
+                  </li>
+                  <li>
+                    <a href="#" class="sf">餐饮品牌新闻</a>
+                  </li>
+                </ul>
+              </div>
+            </button>
+          </li>
+          <li class="item2">
+            <button onclick="window.location.href = '#'">
+              <span class=" zf sf">业态</span>
+              <div class="down2 xf">
+                <ul>
+                  <li>
+                    <a href="#" class="sf">快餐</a>
+                  </li>
+                  <li>
+                    <a href="#" class="sf">火锅</a>
+                  </li>
+                  <li>
+                    <a href="#" class="sf">小吃</a>
+                  </li>
+                  <li>
+                    <a href="#" class="sf">中餐</a>
+                  </li>
+                  <li>
+                    <a href="#" class="sf">西餐</a>
+                  </li>
+                  <li>
+                    <a href="#" class="sf">饮品</a>
+                  </li>
+                  <li>
+                    <a href="#" class="sf">烧烤</a>
+                  </li>
+                  <li>
+                    <a href="#" class="sf">烘焙</a>
+                  </li>
+                  <li>
+                    <a href="#" class="sf">特色餐饮</a>
+                  </li>
+                </ul> 
+                </div>
+            </button>
+          </li>
+          <li>
+            <a href="#" title="餐饮专题" class="zf sf">专题</a>
+          </li>
+          <li>
+            <a href="#" title="餐饮招商" class="zf sf">招商</a>
+          </li>
+          <li>
+            <a href="#" title="餐饮商机" class="zf sf">商机</a>
+          </li>
+          <li>
+            <a href="./zh.html" title="餐饮展会" class="zf sf">展会</a>
+          </li>
+          <li>
+            <a href="./jmdphb.html" title="餐饮排行榜1" class="zf sf">排行</a>
+          </li>
+      </div>
+
+      <!-- 登录/入驻 -->
+      <div class="login xf">
+        <img src="img/login.png" alt="">
+        <a href="./login.html" class="dl">登录</a>
+        <a href="./register.html" class="rz">品牌免费入驻</a>
+      </div>
+      
+    </div>
+
+    <!-- 注册部分 -->
+    <div class="zcnr">
+      <!-- 标题部分 -->
+      <div class="zc_title" id="titbox">
+        <div >
+          <img src="./img/icon_zc1.jpg" alt="">
+          <a href="./peoregister.html" class="active">个人注册</a>
+        </div>
+        <div class="active">
+          <img src="./img/icon_zc2.jpg" alt="">
+          <a href="./register.html" >企业注册</a>
+        </div>
+      </div>
+      <!-- 内容部分 -->
+      <div class="zc_content">
+        <!-- 企业注册 -->
+        <div id="qyzc" class="active">
+          <form action="">
+            <div>
+              <p>
+                <span>用户名</span>
+                <i>*</i>
+              </p>
+              <input type="text">
+              <span>用户名3-16字符，可由中文、字母、数字及"-"组成，注册后不可修改</span>
+            </div>
+            <div>
+              <p>
+                <span>登陆密码</span>
+                <i>*</i>
+              </p>
+              <input type="password">
+              <span>为了保证您的安全，密码长度必须大于或等于6位，由数字和字母组合，区分大小写</span>
+            </div>
+            <div>
+              <p>
+                <span>确认密码</span>
+                <i>*</i>
+              </p>
+              <input type="password">
+              <span>请再输入一次登录密码</span>
+            </div>
+            <div>
+              <p>
+                <span>邮箱地址</span>
+                <i>*</i>
+              </p>
+              <input type="password">
+              <span>请准确填写邮箱地址，方便以后密码找回</span>
+            </div>
+            <div>
+              <p>
+                <span>品牌名称</span>
+                <i>*</i>
+              </p>
+              <input type="text">
+              <span>请输入4-12字符(2-6个汉字)，注册成功后不能修改</span>
+            </div>
+            <div>
+              <p>
+                <span>品牌标题</span>
+              </p>
+              <input type="text">
+              <span>不能超过32个字符，16个汉字</span>
+            </div>
+            <div class="qyfl">
+              <p>
+                <span>行业分类</span>
+                <i>*</i>
+              </p>
+              <div class="qyfl_fx">
+                <div>
+                  <input type="checkbox" name="" id="kc">
+                  <label for="kc">快餐</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="hg">
+                  <label for="hg">火锅</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="xc">
+                  <label for="xc">小吃</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="zc">
+                  <label for="zc">中餐</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="xc">
+                  <label for="xc">西餐</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="yp">
+                  <label for="yp">饮品</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="sk">
+                  <label for="sk">烧烤</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="hb1">
+                  <label for="hb1">汉堡</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="jp">
+                  <label for="jp">鸡排</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="zzc">
+                  <label for="zzc">自助餐</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="lhg">
+                  <label for="lhg">老火锅</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="ccx">
+                  <label for="ccx">串串香</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="hgll">
+                  <label for="hgll">韩国料理</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="rsll">
+                  <label for="rsll">日式料理</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="kf">
+                  <label for="kf">咖啡</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="tp">
+                  <label for="tp">甜品</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="hb">
+                  <label for="hb">烘焙</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="ss">
+                  <label for="ss">熟食</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="zc">
+                  <label for="zc">早餐</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="qz">
+                  <label for="qz">清真</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="wm">
+                  <label for="wm">外卖</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="mc">
+                  <label for="mc">冒菜</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="bd">
+                  <label for="bd">便当</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="mlt">
+                  <label for="mlt">麻辣烫</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="xhg">
+                  <label for="xhg">小火锅</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="scy">
+                  <label for="scy">酸菜鱼</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="gjcy">
+                  <label for="gjcy">国际餐饮</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="xxsp">
+                  <label for="xxsp">休闲食品</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="bs">
+                  <label for="bs">比萨</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="hx">
+                  <label for="hx">海鲜</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="nc">
+                  <label for="nc">奶茶</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="mb">
+                  <label for="mb">面包</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="xg">
+                  <label for="xg">香锅</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="ky">
+                  <label for="ky">烤鱼</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="mx">
+                  <label for="mx">米线</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="cy">
+                  <label for="cy">茶叶</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="ls">
+                  <label for="ls">零食</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="dfc">
+                  <label for="dfc">地方菜</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="yhg">
+                  <label for="yhg">鱼火锅</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="cct">
+                  <label for="cct">茶餐厅</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="tscy">
+                  <label for="tscy">特色餐饮</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="yyct">
+                  <label for="yyct">音乐餐厅</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="kr">
+                  <label for="kr">烤肉</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="bz">
+                  <label for="bz">包子</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="mg">
+                  <label for="mg">面馆</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="ss">
+                  <label for="ss">寿司</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="zj">
+                  <label for="zj">炸鸡</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="zp">
+                  <label for="zp">粥铺</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="np">
+                  <label for="np">牛排</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="mg">
+                  <label for="mg">焖锅</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="sc">
+                  <label for="sc">食材</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="bql">
+                  <label for="bql">冰淇淋</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="bld">
+                  <label for="bld">便利店</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="lzh">
+                  <label for="lzh">老字号</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="zskc">
+                  <label for="zskc">中式快餐</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="xskc">
+                  <label for="xskc">西式快餐</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="xxct">
+                  <label for="xxct">休闲餐厅</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="ztct">
+                  <label for="ztct">主题餐厅</label>
+                </div>
+              </div>
+              
+            </div>
+            <div class="tzje">
+              <p>
+                <span>投资金额</span>
+              </p>
+              <input type="radio" name="invest" id="tz1">
+              <label for="tz1">5万以下</label>
+              <input type="radio" name="invest" id="tz2">
+              <label for="tz2">5-10万</label>
+              <input type="radio" name="invest" id="tz3">
+              <label for="tz3">10-20万</label>
+              <input type="radio" name="invest" id="tz4">
+              <label for="tz4">20-50万</label>
+              <input type="radio" name="invest" id="tz5">
+              <label for="tz5">50-100万</label>
+              <input type="radio" name="invest" id="tz6">
+              <label for="tz6">100以上</label>
+            </div>
+            <div>
+              <p>
+                <span>店铺面积</span>
+              </p>
+              <input type="text">
+              <span>运作该品牌需要的店铺面积</span>
+            </div>
+            <div>
+              <p>
+                <span>门店数量</span>
+              </p>
+              <input type="text">
+              <span>直营店、加盟店总数量</span>
+            </div>
+            <div>
+              <p>
+                <span>注册资金</span>
+              </p>
+              <input type="text">
+              <span>请按照企业营业执照中的注册资本 如：人民币50万</span>
+            </div>
+            <div class="qyxz">
+              <p>
+                <span>企业性质</span>
+              </p>
+              <input type="radio" name="nature" id="xz1">
+              <label for="xz1">外资企业</label>
+              <input type="radio" name="nature" id="xz2">
+              <label for="xz2">股份制</label>
+              <input type="radio" name="nature" id="xz3">
+              <label for="xz3">私营</label>
+              <input type="radio" name="nature" id="xz4">
+              <label for="xz4">有限责任</label>
+              <input type="radio" name="nature" id="xz5">
+              <label for="xz5">国有控股</label>
+              <input type="radio" name="nature" id="xz6">
+              <label for="xz6">中外合资</label>
+            </div>
+            <div>
+              <p>
+                <span>成立时间</span>
+                <i>*</i>
+              </p>
+              <input type="text">
+              <span>请正确填写公司成立时间</span>
+            </div>
+            <div>
+              <p>
+                <span>品牌发源</span>
+              </p>
+              <input type="text">
+              <span>创立品牌时所在的地方</span>
+            </div>
+            <div class="jyms">
+              <p>
+                <span>经营模式</span>
+              </p>
+              <input type="checkbox" name="mode" id="ms1">
+              <label for="ms1">直营连锁</label>
+              <input type="checkbox" name="mode" id="ms2">
+              <label for="ms2">联营合作</label>
+              <input type="checkbox" name="mode" id="ms3">
+              <label for="ms3">加盟合作</label>
+              <input type="checkbox" name="mode" id="ms4">
+              <label for="ms4">区域代理</label>
+              <input type="checkbox" name="mode" id="ms5">
+              <label for="ms5">单店特许</label>
+              <input type="checkbox" name="mode" id="ms6">
+              <label for="ms6">其它</label>
+            </div>
+            <div>
+              <p>
+                <span>公司名称</span>
+                <i>*</i>
+              </p>
+              <input type="text">
+              <span>请用中文填写企业在工商局注册的全称</span>
+            </div>
+            <div>
+              <p>
+                <span>公司网址</span>
+              </p>
+              <input type="text">
+              <span>公司官方网址，如：http://www.cy8.com.cn/</span>
+            </div>
+            <div class="txdz">
+              <p>
+                <span>通讯地址</span>
+              </p>
+              <div >
+                <select id="province" onchange="chooseProvince(this)" class="star">
+                  <option value="1">省/市</option>
+                </select>
+                <select id="city" onchange="chooseCity(this)">
+                  <option value="2">地/州</option>
+                </select>
+                <select id="area">
+                  <option value="3">区/县</option>
+                </select>
+              </div>
+              <span>请正确选择联系地址，您将更快更准得获取到企业的邮寄资料</span>
+            </div>
+            <div>
+              <p>
+                <span>详细地址</span>
+              </p>
+              <input type="text">
+              <span>公司具体地址，如：建国门外大街8号</span>
+            </div>
+            <div>
+              <p>
+                <span>加盟费用</span>
+              </p>
+              <input type="text">
+              <span>因公司性质不同，所需费用也不同，可以列出几条公司重要的几项费用</span>
+            </div>
+            <div>
+              <p>
+                <span>加盟区域</span>
+              </p>
+              <input type="text">
+            </div>
+            <div>
+              <p>
+                <span>主营产品</span>
+                <i>*</i>
+              </p>
+              <input type="text">
+              <span>公司主要经营的产品</span>
+            </div>
+            <div class="tzrq">
+              <p>
+                <span>投资人群</span>
+              </p>
+              <input type="checkbox" name="investmentgroups" id="tzr1">
+              <label for="tzr1">餐饮加盟</label>
+              <input type="checkbox" name="investmentgroups" id="tzr2">
+              <label for="tzr2">自有店铺</label>
+              <input type="checkbox" name="investmentgroups" id="tzr3">
+              <label for="tzr3">餐饮投资</label>
+              <input type="checkbox" name="investmentgroups" id="tzr4">
+              <label for="tzr4"> 现有公司</label>
+              <input type="checkbox" name="investmentgroups" id="tzr5">
+              <label for="tzr5">自主创业</label>
+              <input type="checkbox" name="investmentgroups" id="tzr6">
+              <label for="tzr6">其它</label>
+            </div>
+            <div class="qtsm">
+              <p>
+                <span>其他备注</span>
+              </p>
+              <textarea></textarea>
+              <span>其他说明</span>
+            </div>
+            <div>
+              <p>
+                <span>联系人</span>
+                <i>*</i>
+              </p>
+              <input type="text">
+            </div>
+            <div class="lxfs">
+              <p>
+                <span>联系电话</span>
+              </p>
+              <input type="text">
+              <p class="sj">
+                <span>联系手机</span>
+              </p>
+              <input type="text">
+            </div>
+            <div class="qqvx">
+              <p>
+                <span>QQ/微信</span>
+              </p>
+              <input type="text">
+            </div>
+            <div class="yzm">
+              <p>
+                <span>验证码</span>
+                <i>*</i>
+              </p>
+              <input type="text" placeholder="验证码">
+              <div class="yzm_t">
+                <img src="./img/yzm.jpg" alt="">
+              </div>
+            </div>
+            <div class="ydty">
+              <input type="checkbox" name="" id="ty">
+              <label for="ty">我已阅读并同意</label>
+              <a href="#">《餐饮杰服务协议》</a>
+            </div>
+            <div class="btn">
+              <span>注册</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  <!-- 底部导航 -->
+   <div class="lastnav">
+    <div class="lastnav1">
+      <div class="lastnav11">
+        <a href="./index.html" class="sf df">餐饮首页</a>
+        <a href="./gywm.html" class="sf df">关于我们</a>
+        <a href="#" class="sf df">网站导航</a>
+        <a href="#" class="sf df">意见反馈</a>
+        <a href="#" class="sf df">法律声明</a>
+        <a href="#" class="sf df">联系我们</a>
+      </div>
+      <div class="lastnav12">
+          <span class="qf">Copyright 2022 CY8 All Rights Reserved. 餐饮杰 版权所有</span>   
+          <a href="#" class="qf">京ICP备：16036216号-2</a>
+          <a href="#" class="qf">京公网安备：11010802024684号</a>
+      </div>
+    </div>
+    <div class="lastnav2">
+      <img src="./img/ewm.jpg" alt="">
+      <p class="qf">餐饮杰手机版</p>
+    </div>
+   </div>
+  </div>
+
+  <script src="./vendor/jquery-3.6.0.js"></script>
+  <script language="javascript" src="./js/province.js" type="text/javascript" charset="utf-8"></script>
+  <script>
+    $('#titbox div').click(function(){
+      $(this).addClass('active').siblings().removeClass('active')
+    })
+  </script>
+</body>
+</html>

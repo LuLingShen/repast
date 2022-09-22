@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>用户登录 - 餐饮杰</title>
+  <link rel="shortcut icon" href="./img/bitbug_favicon (1).ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+  <div>
+      <!-- 顶部导航栏 -->
+    <div class="topnav">
+      <!-- 品牌图标能够链接到首页 -->
+      <a href="index.html">
+        <img src="img/logo.png" alt="">
+      </a>
+
+      <!-- 导航内容 -->
+      <div >
+        <ul class="zf" >
+          <li >
+            <a href="#" title="餐饮品牌" class="zf sf">品牌</a>
+          </li>
+          <li class="item1">
+            <button onclick="window.location.href = '#' " >
+              <span class="zf sf">资讯</span>
+              <div class="down1 xf">
+                <ul>
+                  <li>
+                    <a href="cyhyzx.html" class="sf">餐饮行业资讯</a>
+                  </li>
+                  <li>
+                    <a href="#" class="sf">餐饮品牌新闻</a>
+                  </li>
+                </ul>
+              </div>
+            </button>
+          </li>
+          <li class="item2">
+            <button onclick="window.location.href = '#'">
+              <span class=" zf sf">业态</span>
+              <div class="down2 xf">
+                <ul>
+                  <li>
+                    <a href="#" class="sf">快餐</a>
+                  </li>
+                  <li>
+                    <a href="#" class="sf">火锅</a>
+                  </li>
+                  <li>
+                    <a href="#" class="sf">小吃</a>
+                  </li>
+                  <li>
+                    <a href="#" class="sf">中餐</a>
+                  </li>
+                  <li>
+                    <a href="#" class="sf">西餐</a>
+                  </li>
+                  <li>
+                    <a href="#" class="sf">饮品</a>
+                  </li>
+                  <li>
+                    <a href="#" class="sf">烧烤</a>
+                  </li>
+                  <li>
+                    <a href="#" class="sf">烘焙</a>
+                  </li>
+                  <li>
+                    <a href="#" class="sf">特色餐饮</a>
+                  </li>
+                </ul> 
+                </div>
+            </button>
+          </li>
+          <li>
+            <a href="#" title="餐饮专题" class="zf sf">专题</a>
+          </li>
+          <li>
+            <a href="#" title="餐饮招商" class="zf sf">招商</a>
+          </li>
+          <li>
+            <a href="#" title="餐饮商机" class="zf sf">商机</a>
+          </li>
+          <li>
+            <a href="./zh.html" title="餐饮展会" class="zf sf">展会</a>
+          </li>
+          <li>
+            <a href="./jmdphb.html" title="餐饮排行榜1" class="zf sf">排行</a>
+          </li>
+      </div>
+
+      <!-- 登录/入驻 -->
+      <div class="login xf">
+        <img src="img/login.png" alt="">
+        <a href="./login.html" class="dl">登录</a>
+        <a href="./register.html" class="rz">品牌免费入驻</a>
+      </div>
+      
+    </div>
+
+  
+    <!-- 登录部分 -->
+    <div class="container"> 
+      <img src="./img/bg_login.jpg" alt="">
+      <div>
+        <!-- 标题部分 -->
+        <div id="title">
+          <span class="active">个人用户</span>
+          <span>企业用户</span>
+        </div>
+        <!-- 表单部分 -->
+        <form action="">
+          <ul>
+            <li>
+              <div class="user">
+                <input type="text">
+                <img src="./img/bg_user.jpg" alt="">
+              </div> 
+            </li>
+            <li>
+              <div class="user">
+                <input type="password">
+                <img src="./img/bg_psw.jpg" alt="">
+              </div>
+            </li>
+            <li>
+                <input type="text" placeholder="验证码">
+              <div class="yzm_img">
+                <img src="./img/yzm.jpg" alt="">
+              </div>
+            </li>
+            <li>
+              <input type="button" value="登录" id="btn">
+            </li>
+            <li>
+              <div>
+                <input type="checkbox" name="" id="rem">
+                <label for="rem">记住用户名</label>
+              </div>
+              <a href="#">忘记密码？</a>
+              <a href="./register.html">注册</a>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+
+  <!-- 底部导航 -->
+  <div class="lastnav">
+    <div class="lastnav1">
+      <div class="lastnav11">
+        <a href="./index.html" class="sf df">餐饮首页</a>
+          <a href="./gywm.html" class="sf df">关于我们</a>
+        <a href="#" class="sf df">网站导航</a>
+        <a href="#" class="sf df">意见反馈</a>
+        <a href="#" class="sf df">法律声明</a>
+        <a href="#" class="sf df">联系我们</a>
+      </div>
+      <div class="lastnav12">
+          <span class="qf">Copyright 2022 CY8 All Rights Reserved. 餐饮杰 版权所有</span>   
+          <a href="#" class="qf">京ICP备：16036216号-2</a>
+          <a href="#" class="qf">京公网安备：11010802024684号</a>
+      </div>
+    </div>
+    <div class="lastnav2">
+      <img src="./img/ewm.jpg" alt="">
+      <p class="qf">餐饮杰手机版</p>
+    </div>
+   </div>
+
+  </div>
+
+  <script src="./vendor/jquery-3.6.0.js"></script>
+  <script>
+    $('#title span').click(function(){
+      $(this).addClass('active').siblings().removeClass('active')
+    })
+  </script>
+</body>
+</html>

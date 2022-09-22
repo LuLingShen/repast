@@ -1,0 +1,575 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style: none;
+}
+.sf{
+  color: #333;
+}
+.mf{
+  color: #666;
+}
+.qf{
+  color: #999;
+}
+
+.dddf{
+  font-size: 22px;
+}
+.ddf{
+  font-size: 21px;
+}
+.df{
+  font-size: 20px;
+}
+.zf{
+  font-size: 18px;
+}
+.zzf{
+  font-size: 17px;
+}
+.xf{
+  font-size: 16px;
+}
+.xxf{
+  font-size: 14px;
+}
+a{
+  text-decoration:none ;
+}
+a:hover{
+  color:#FF8631;
+}
+button:hover{
+  color: #FF8631;
+}
+/* 顶部导航栏 */
+.topnav{
+  display: flex;
+  line-height: 90px;
+  vertical-align:middle ;
+  position: relative;
+  box-shadow: 0 0 5px #ccc;
+}
+.topnav>a>img{
+  width: 147px;
+  height: 44px;
+  margin-left: 10px;
+  margin-right: 30px;
+  vertical-align:middle ;
+}
+.topnav ul{
+  display: flex;
+}
+.topnav ul li{
+  padding:0 15px;
+
+}
+.topnav ul li button{
+  background-color: transparent;
+  border: 0;
+}
+.topnav{
+  position: relative;
+}
+.topnav .login{
+  position: absolute;
+  right: 10px;
+}
+.topnav .login img{
+  height: 20px;
+}
+.topnav .login .dl{
+  color: #333;
+}
+.topnav .login .dl:hover{
+  color: #FF8631;
+}
+.topnav .login .dl::after{
+  content: "";
+  width: 1px;
+  height: 15px;
+  background: #a0a0a0;
+  display: inline-block;
+  margin-left: 7px;
+  position: relative;
+  top: 3px;
+}
+.topnav .login .rz{
+  color:#FF8631 ;
+}
+
+
+.topnav ul .item1:hover .down1{
+  display: block;
+}
+.topnav ul li button .down1{
+  position: absolute;
+  top: 90px;
+  left: 0;
+  width: 1268px;
+  background-color: rgba(235,235,235,.8);;
+  /* background-color: pink; */
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+  display: none;
+}
+.topnav .down1 li:nth-child(1){
+  margin-left: 253px;
+  margin-right: 10px;
+}
+
+.topnav ul .item2:hover .down2{
+  display: block;
+}
+
+
+.topnav ul li button .down2{
+  position: absolute;
+  top: 90px;
+  left: 0;
+  width: 1268px;
+  background-color: rgba(235,235,235,.8);;
+  /* background-color: pink; */
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+  display: none;
+}
+.topnav .down2 li:nth-child(1){
+  margin-left: 335px;
+  
+}
+.topnav .down2 li{
+  padding: 0;
+  margin-left: 25px;
+}
+
+/* 注册内容 */
+.zcnr{
+  width: 900px;
+  /* height: 1000px; */
+  /* background-color: #ddd; */
+  margin:30px auto;
+}
+.zcnr .zc_title{
+  display: flex;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #666;
+  justify-content: center;
+  
+}
+.zcnr .zc_title div:first-child{
+  margin-right:120px ;
+}
+.zcnr .zc_title div img{
+  width: 46px;
+  height: 39px;
+  vertical-align: middle;
+}
+.zcnr .zc_title div a{
+  color: #333;
+  font-size: 24px;
+  vertical-align: middle;
+  user-select: none;
+}
+.zcnr .zc_title div a:hover{
+  color: #ff6a00;
+}
+.zcnr .zc_title div.active a{
+  color: #ff6a00;
+}
+
+input:focus{
+  border: 1px solid #ff6a00;
+  outline: 0;
+}
+
+/* 企业注册 */
+#qyzc{
+  padding-top: 25px;
+}
+#qyzc form div{
+  display: flex;
+  align-items: center;
+  line-height: 70px;
+}
+#qyzc>form div>p{
+  width: 98px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: palegoldenrod; */
+  margin-right: 16px;
+}
+#qyzc>form div>p>i{
+color: #ff6a00;
+}
+#qyzc>form div>input{
+  width: 390px;
+  height: 44px;
+  line-height: 44px;
+  padding-left: 10px;
+  border: 1px solid #ddd;
+  margin-right: 15px;
+}
+#qyzc>form div>input:focus{
+  border-color: #ff6a00;
+}
+#qyzc>form div>span{
+  width: 375px;
+  line-height: 25px;
+  font-size: 16px;
+  color: #aaa;
+  display: flex;
+  flex-wrap: wrap;
+}
+#qyzc>form .qyfl{
+  display: flex;
+  align-items: flex-start;
+
+}
+#qyzc>form .qyfl_fx{
+  width: 795px;
+  height: 310px;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin-top: 18px;
+  z-index: 1000;
+}
+#qyzc>form .qyfl_fx>div{
+  width: 100px;
+  height: 34px;
+  line-height: 34px;
+  /* margin-right: 25px; */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  /* position: relative; */
+}
+#qyzc>form .qyfl_fx>div label{
+  font-size: 16px;
+  color: #666;
+ /* position: relative; */
+  /* top: -15px; */
+
+}
+#qyzc>form .qyfl_fx input[type="checkbox"] {
+  line-height: 2ex;
+  position: absolute;
+  left: -999em;
+
+}
+#qyzc>form .qyfl_fx input[type="checkbox"] + label {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+#qyzc>form .qyfl_fx input[type="checkbox"] + label::before {
+  content:"";
+  display: inline-block;
+  vertical-align: -14%;
+  height: 1.5ex;
+  width: 1.5ex;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  margin-bottom:3px ;
+  margin-left:5px ;
+  margin-right: 0.5em;
+}
+
+#qyzc>form .qyfl_fx input[type="checkbox"]:checked + label::after {
+  content: '';
+  position: absolute;
+  width: 1.1ex;
+  height: 0.4ex;
+  background: rgba(0, 0, 0, 0);
+  top: 1.5ex;
+  left: 0.7ex;
+  border: 3px solid #aaa;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+#qyzc>form .txdz>div{
+ 
+  width: 415px;
+  height: 44px;
+  line-height: 44px;
+}
+#qyzc>form .txdz select{
+  font-size: 18px;
+  border: 1px solid #ddd;
+  outline: 0;
+  height: 43px;
+  padding: 0 10px;
+  margin-right: 15px;
+  width: 124px;
+  
+}
+#qyzc .qtsm textarea{
+  resize: none;
+  height: 80px;
+  width: 380px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+#qyzc .qtsm textarea:focus{
+  border-color: #ff6a00;
+  outline: none;
+}
+
+#qyzc .lxfs>input{
+  width: 298px;
+  height: 44px;
+  line-height: 44px;
+}
+#qyzc .qqvx>input{
+  width: 298px;
+  height: 44px;
+  line-height: 44px;
+}
+#qyzc form  .lxfs p.sj{
+  margin-left: 20px;
+  width: 90px;
+  margin-right: 0 !important;
+}
+#qyzc>form .yzm input{
+  width: 118px;
+  height: 44px;
+  
+}
+#qyzc>form .yzm input:-moz-placeholder,   
+textarea:-moz-placeholder {   
+  color: #999;
+  /* font-weight: 700; */
+  font-size: 16px;   
+}   
+  
+#qyzc>form .yzm input:-ms-input-placeholder,   
+textarea:-ms-input-placeholder {   
+  color: #999;
+  /* font-weight: 700;  */
+  font-size: 16px;  
+}   
+  
+#qyzc>form .yzm input::-webkit-input-placeholder,   
+textarea::-webkit-input-placeholder {   
+  color: #999;
+  /* font-weight: 700; */
+  font-size: 16px;
+}  
+#qyzc>form .yzm .yzm_t{
+  width: 96px;
+  height: 45px;
+  border: 1px solid #ddd;
+  margin-left: 10px;
+}
+#qyzc>form .yzm .yzm_t img{
+  width: 96px;
+  height: 45px;
+}
+#grzc>form .ydty{
+  display: flex;
+  align-items: center;
+}
+#qyzc>form .ydty label{
+  font-size: 18px;
+  color: #aaa;
+  font-weight: 400;
+  user-select: none;
+}
+#qyzc>form .ydty a{
+  color: #666;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+#qyzc>form .ydty a:hover{
+  color: #ff6a00;
+}
+#qyzc>form .ydty input[type="checkbox"] {
+  line-height: 2ex;
+  position: absolute;
+  left: -999em;
+
+}
+#qyzc>form .ydty input[type="checkbox"] + label {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+#qyzc>form .ydty input[type="checkbox"] + label::before {
+  content:"";
+  display: inline-block;
+  vertical-align: -8%;
+  height: 1.5ex;
+  width: 1.5ex;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  margin-bottom:3px ;
+  margin-left:5px ;
+  margin-right: 0.5em;
+}
+
+form .ydty input[type="checkbox"]:checked + label::after {
+  content: '';
+  position: absolute;
+  width: 1.1ex;
+  height: 0.4ex;
+  background: rgba(0, 0, 0, 0);
+  top: 3.2ex;
+  left: 0.6ex;
+  border: 3px solid #aaa;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+#qyzc .btn{
+  width: 400px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #ff6a00;
+  text-align: center;
+  
+  font-size: 20px;
+  border: none;
+}
+#qyzc .btn span{
+  display: inline-block;
+  color: #fff;
+}
+#qyzc .btn:hover{
+  opacity: .8;
+}
+#qyzc form .tzje>label,.qyxz>label,.jyms>label,.tzrq>label{
+  margin-right: 12px;
+  color: #666;
+  font-size: 16px;
+  user-select: none;
+}
+input[type="radio"]+label::before {
+  content: " ";
+  display: inline-block;
+  vertical-align: middle;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 1.9px solid #999999;
+  margin-right: 0.2rem;
+  box-sizing: border-box;
+  margin-top: -0.1rem;
+  background-color: #fff;
+}
+
+input[type="radio"]:checked+label::before {
+  background-color: #666;
+  background-clip: content-box;
+  border: 1px solid #666;
+  padding: 0.17rem;
+  box-sizing: border-box;
+}
+input[type="radio"] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+#qyzc>form .jyms>input[type="checkbox"],.tzrq>input[type="checkbox"] {
+  line-height: 2ex;
+  position: absolute;
+  left: -999em;
+
+}
+#qyzc>form .jyms input[type="checkbox"] + label,.tzrq input[type="checkbox"] + label {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+#qyzc>form .jyms input[type="checkbox"] + label::before,.tzrq input[type="checkbox"] + label::before {
+  content:"";
+  display: inline-block;
+  vertical-align: -8%;
+  height: 1.5ex;
+  width: 1.5ex;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  margin-bottom:3px ;
+  margin-left:5px ;
+  margin-right: 0.5em;
+}
+
+form .jyms input[type="checkbox"]:checked + label::after,.tzrq input[type="checkbox"]:checked + label::after {
+  content: '';
+  position: absolute;
+  width: 1.1ex;
+  height: 0.4ex;
+  background: rgba(0, 0, 0, 0);
+  top: 3.7ex;
+  left: 0.6ex;
+  border: 3px solid #aaa;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/* 底部导航栏 */
+.lastnav{
+  height: 143px;
+  margin: 10px;
+  /* margin-top: 1080px; */
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+ .lastnav1{
+  width: 1136px;
+}
+.lastnav1 .lastnav11{
+  padding-top: 10px;
+  border-top: 1px solid #aaa;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+.lastnav1 .lastnav11 a{
+  margin-right: 30px;
+}
+.lastnav1 .lastnav12 span,a{
+  font-size: 14px;
+}
+ .lastnav1 .lastnav12 a:hover{
+  color: black;
+}
+.lastnav2{
+  width: 85px;
+  margin: auto 0;
+}
+.lastnav2 img{
+  width: 85px;
+  height: 85px;
+}
+.lastnav2 p{
+  font-size: 14px;
+}
